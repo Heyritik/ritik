@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<style>
+  #container{
+      width:700px;
+	  border:1px solid black;
+	  background:#eee;
+	  margin-left:20%;
+	  text-align:center;
+	  display:grid;
+	  grid-template-rows:70px 70px 70px 70px 70px;
+	  grid-template-columns:1fr 1fr 1fr;
+	  grid-gap:5px;
+	  grid-template-areas:
+	            "one one one"
+				"two two three"
+				"four four three"
+				"five five six"
+				"seven eight eight";
+  
+  
+  }
+  
+  .item1{background:orange;grid-area:one;}
+  .item2{background:yellow;grid-area:two;}
+  .item3{background:wheat;grid-area:three;}
+  .item4{background:tan;grid-area:four;}
+  .item5{background:salmon;grid-area:five;}
+  .item6{background:purple;grid-area:six;}
+  .item7{background:gold;grid-area:seven;}
+  .item8{background:khaki;grid-area:eight;}
+
+
+</style>
+<title>grid and flex</title>
+</head>
+<body>
+<div id="container">
+     <div class="item1">one</div>
+     <div class="item2">two</div>
+     <div class="item3">three</div>
+     <div class="item4">four</div>
+     <div class="item5">five</div>
+     <div class="item6">six</div>
+     <div class="item7">seven</div>
+     <div class="item8">eight</div>
+</div>
+
+
+
+</body>
+</html>
